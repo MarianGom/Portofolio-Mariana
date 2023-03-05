@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0", user-scalable="non">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>MI PORTFOLIO</title>
+</head>
+
+<body>
+    <!--SECCION INICIO-->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1></h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#formaciones" onclick="seleccionar(this)">EDUCACION</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">EXPERIENCIA</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+                    <!---Iconos del menu responsive-->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <!--Iconos de las redes sociales-->
+                    <div class="redes">
+                        <a href="#www.linkedin.com/in/marianagom/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </header>
+
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Mariana Alejandra Gomez</span>, Programadora, Estudiante y Emprendedora.</h2>
+                <p class="descripcion"><br></p>
+                <a href="#portfolio">Ir a Portfolio</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!--SECCION SOBRE MI-->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/WhatsApp Image 2023-02-27 at 22.26.44.jpeg" alt="">
+
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, te cuento un poquito de <span>Mariana</span></h2>
+            <p>Actualmente estudiante de la Carrera Licenciatura En Sistemas de Información y Tecnicatura Superior en Programación.
+                <br>Oriunda de la Ciudad de Vila Ojo de Agua, Santiago del Estero, emprendedora y apasionada de adquirir nuevos conocimientos, tanto de la tecnologia, como del arte.</p>
+            <p>
+                ¿El objetivo? Continuar trabajando y evolucionar profesionalmente en mi sector. Aspiro a formar parte de un equipo que me permita hacerlo alineandome a los objetivos del mismo.
+            </p>
+        </div>
+    </section>
+
+    <!--SECCION FORMACION-->
+    <section id="formaciones">
+        <h3 class="titulo-seccion">MI EDUCACION</h3>
+        <div class="fila">
+            <div class="formacion">
+                <h4>Secundario Completo</h4>
+                <hr>
+                <p>Colegio Leopoldo Lugones N°7
+                   <br>Certificado en Educación Polimodal en la modalidad Ciencias Naturales con énfasis en Salud y Ambiente</p>
+
+            </div>
+            <div class="formacion">
+                <h4>Redacción Administrativa</h4>
+                <hr>
+                <p>Escuela para la Innovación Educativa.<br>Universidad Nacional de Santiago del Estero</p>
+
+            </div>
+            <div class="formacion">
+                <h4>Community Management</h4>
+                <hr>
+                <p>Centro de formación Capacitarte. UBA</p>
+
+            </div>
+        </div>
+        <div class="fila">
+            <div class="formacion">
+                <h4>Licenciatura en Sistemas de Informacion</h4>
+                <hr>
+                <p>4° año en Curso. Universidad de Santiago del Estero (UNSE)</p>
+
+            </div>
+            <div class="formacion">
+                <h4>Argentina Programa Agosto - Octubre 2021</h4>
+                <hr>
+                <p>Cámara de la Industria Argentina del Software</p>
+
+            </div>
+            <div class="formacion">
+                <h4>Tecnicatura Superior en Programación</h4>
+                <hr>
+                <p>Instituto Tecnologico de Santiago del Estero (ITSE)</p>
+
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION HABILIDADES-->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES</h3>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Html & Css</p>
+                <span class="porcentaje">75%</span>
+            </div>
+            <div class="barra">
+                <div id="hmtl" class="barra-progreso1"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Java</p>
+                <span class="porcentaje">85%</span>
+            </div>
+            <div class="barra">
+                <div id="java" class="barra-progreso2"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>JavaScript</p>
+                <span class="porcentaje">50%</span>
+            </div>
+            <div class="barra">
+                <div id="js" class="barra-progreso3"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Base de Datos</p>
+                <span class="porcentaje">85%</span>
+            </div>
+            <div class="barra">
+                <div id="bd" class="barra-progreso4"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Python</p>
+                <span class="porcentaje">75%</span>
+            </div>
+            <div class="barra">
+                <div id="ps" class="barra-progreso5"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--SECCION PORTAFOLIO-->
+    <section id="formaciones">
+        <h3 class="titulo-seccion">MI EXPERIENCIA</h3>
+        <div class="fila">
+            <div class="formacion">
+                <h4>Network Operations Center Operator</h4>
+                <hr>
+                <p>Complejo Juan Felipe Ibarra · Contrato temporal <br>
+                    sept. 2022 - actualidad · 6 meses
+                    <br> Santiago del Estero, Argentina</p>
+            </div>
+            <div class="formacion">
+                <h4>Soporte Técnico a aplicaciones</h4>
+                <hr>
+                <p>Modularsoft · Jornada parcial <br>
+                    jul. 2022 - actualidad · 8 meses
+                   <br> Santiago del Estero, Argentina</p>
+            </div>
+            <div class="formacion">
+                <h4>Community Management</h4>
+                <hr>
+                <p>Creacion de contenido.<br>Manejo de redes sociales y Gestion de Publicidad
+                    <br>
+                    Feb. 2016 - actualidad · 7 años
+                   <br> Santiago del Estero, Argentina</p>
+
+            </div>
+        </div>
+        <div class="fila">
+            <div class="formacion">
+                <h4>Promotora de eventos</h4>
+                <hr>
+                <p>Participacion en ferias de Ciencias y eventos educativos
+                    <br>
+                    jul. 2017 - Dic. 2017 · 5 meses
+                   <br> Santiago del Estero, Argentina</p>
+                </p>
+
+            </div>
+            <div class="formacion">
+                <h4>Atencion al cliente y cajera</h4>
+                <hr>
+                <p>Kioscos - Verdulerias - Ferias
+                    <br>mar. 2010 - Oct. 2012 · 2 años y 7 meses
+                    <br>
+                    jun. 2020 - Dic. 2020 · 6 meses
+                   <br> Villa Ojo de Agua, Santiago del Estero, Argentina
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--SECCION CONTACTO-->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactame</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad">
+                    <input type="text" placeholder="Direccion de Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..."
+                        class="input-full"></textarea>
+                </div>
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+                
+            </form>
+    </section>
+    <!--SECCION FOOTER-->
+    <footer>
+        <p>Todos los derechos reservados - 2023</p>
+        <div class="redes">
+            
+            <a href="#www.linkedin.com/in/marianagom/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
